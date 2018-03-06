@@ -1,6 +1,6 @@
-import json
 import random
 
+# Why not, right?
 _int_names = [
     'John', 'Paul', 'George', 'Ringo', 'Lucy', 'Michelle', 'Rita', 'Pam'
 ]
@@ -15,6 +15,7 @@ _org_names = [
     'Org_H',
 ]
 
+# Randomly generate a few random Orgs. and Interns. Note the 'max_interns' property of an Org.
 _orgs = [{
     'name': _,
     'max_interns': random.randint (1, 1),
@@ -27,9 +28,11 @@ _ints = [{
     'preferences': random.sample (_org_names, len (_org_names)),
 } for _ in _int_names]
 
+# Lists to keep track of tentative matches as well as Interns pending a match to an Org.
 _matched = []
 _pending = _int_names.copy ()
 
+# Start
 while len (_pending) > 0 and len (_matched) < _total_internships:
     for i_n in _pending:
         print ('On {}'.format (i_n))
