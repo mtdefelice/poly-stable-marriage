@@ -1,6 +1,6 @@
 # poly-stable-marriage
 
-A polygamous stable marriage implementation in Python. Based on the Gale–Shapley algorithm.
+A polygamous stable marriage implementation in Python. Based on the [Gale–Shapley algorithm](https://en.wikipedia.org/wiki/Stable_marriage_problem).
 
 ## Output
 
